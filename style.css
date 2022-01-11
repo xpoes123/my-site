@@ -1,0 +1,46 @@
+body { 
+    background-color: #ffffff;
+    margin: 0px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+.center{
+    text-align: center;
+}
+.newButton{
+    text-align:center;
+}
+
+/*Progress bar */
+.progress{
+    margin: auto;
+    width: 80%;
+    background-color: grey;
+    border-radius: 7px;
+}
+.progress .myBar{
+    width: 0%;
+    height: 30px;
+    background-color: green;
+    /*animation: progress-animation 5s forwards;*/
+    border-radius: 7px;
+}
+.Finished{
+    text-align:center;
+}
+#play-animation{
+    animation: progress-animation 5s forwards;
+}
+@keyframes progress-animation{
+    0% { width :0%;}
+    100% {width: 100%;}
+}
+
+
+
+/* newTask */
+.drop{
+    text-align:center;
+}
+.newName{
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>New Task</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class="center">
+            <h1>New Task</h1>
+        </div>
+        <div class="drop">
+            <form action = "/my-handling-form-page" method ="post">
+                <label for="subject" id ="subject">Choose a subject:</label>
+                <select name = "subject" id = "subject">
+                    <option value = "CS">CS</option>
+                    <option value = "Math">Math</option>
+                    <option value = "Web Dev">Web Dev</option>
+                    <option value = "Summer">Summer</option>
+                </select>   
+            </form>
+        </div>
+        <div class="newName">
+            <form id = "form">
+                <ul>
+                   <label for="name">Name of Task:</label>
+                   <input type="text" id="name" name="task_name">
+                   <label for="drate">Times Completed per Day:</label>
+                   <input type="number" id="drate" name="daily_rate">
+                   <label for="importance">Importance (/100):</label>
+                   <input type="number" id="importance" name="importance_val">
+                   <div class="formSubmit">
+                        <input type="submit" value="Submit">
+                   </div>
+                </ul>
+               </form>
+        </div>
+        <script src="./fxn.js"></script>
+    </body>
+</html>
